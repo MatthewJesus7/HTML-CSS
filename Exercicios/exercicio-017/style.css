@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1,h2 {
+    font-family: 'work sans''Times New Roman', Times, serif;
+    font-size: 40px;
+    /*
+    Medidas Absolutas
+    cm, mm, in, px, pt, pc
+
+    M
+    edidas Relatvas
+    em: medida relativa ap tamanho atual da fonte.
+    ex: relativa a altura x da fonte.
+    rem: semelhante ao em, mas realitvo a fonte configurada no body.
+    vw: largura da viewport
+    vh: altura da viewport
+    %
+    */
+
+    /*
+    medida recomendada pela W3C:
+    usar 
+    px e em*/
+
+    /*16px geralmente é 1em
+    em=tamanho principal da fonte*/ 
+    font-weight: normal;
+}
+h3 {
+    font: lighter 60px arial;
+}
+
+
+

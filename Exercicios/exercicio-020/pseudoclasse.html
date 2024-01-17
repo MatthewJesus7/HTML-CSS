@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+        }
+        div:hover{
+            background-color: rgb(190, 0, 0);
+            height: 110px;
+            width: 110px;
+        }
+        .um:hover{
+            width: 200px;
+        }
+        .um:hover>img {
+            display: block;
+        }
+        .img {
+            width: 100px;
+            height: 75px;
+            position: relative;
+            left: 100px;
+        }
+        .img:hover.um>p{
+            display: block;
+        }
+        .um>img {
+            display: none;
+        }
+        .p {
+            display: none;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="um">1 <span class="p">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam autem fugiat ut minus, perspiciatis hic corrupti! Temporibus odio voluptates natus, laboriosam cupiditate fugit exercitationem maxime corporis quaerat rem voluptatum vitae.</p>
+    </span><img class="img"
+        src="/exercicio-016/imagens/arvore300px.jpg" alt="arvore"></div>
+    <div class="dois">2</div>
+    <div class="três">3</div>
+</body>
+</html>

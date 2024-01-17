@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+/* Font-face: para fontes externas (e instaladas) em ser do google. */
+
+:root {
+    --cor0: white;
+    --cor1: black;
+    --cor2: rgba(0, 0, 0, 0.500);
+    --cor3: rgba(0, 0, 0, 0.200);
+    --cor4: rgba(0, 0, 0, 0);
+
+    --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fonte-destaque: 'bebas neue', cursive;
+    --fonte-android: 'android', cursive;
+    /* root, que define as configurações de todo o documento */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* *, que seleciona todos/as tags */
+}
+
+p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 50px;
+    /* configuração do parágrafo */
+    line-height: 1.2em;
+    /* espaçamento de linhas */
+}
+
+/* 1200px, largura maxima recomendada */
+
+body {
+    height: 100%;
+    background-color: var(--cor2);
+    background-attachment: fixed;
+    font-family: var(--fonte-padrao);
+    /* var -> ligação do root */
+}
+
+header {
+    height: 100%;
+    background-image: linear-gradient(180deg, var(--cor0), var(--cor1));
+    background-attachment: fixed;
+    margin: 50px 0px 0px 0px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 5em;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: var(--cor0);
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav div {
+    
+}
+
+main {
+    background-color: var(--cor0);
+    padding: 0px 20px;
+    margin: auto;
+    /* centraliza as margens automaticamente */
+    min-width: 280px;
+    max-width: 800px;
+    /* faz com que tenha uma largura minima e macima para o site */
+}
+
+main h1 {
+
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+}
+
+main img {
+    width: 100%;
+}
+
+.imagem-pequena {
+    max-width: 500px;
+    min-width: 300px;
+    /* faz com que tenha um  tamanho mínimo e maximo para a imagem. */
+}
+
+aside {
+    background-color: var(--cor3);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+aside > ul {
+    list-style-type: '\2714\0020';
+    /* contra barra, codigo do emogi.
+    contra barra, código de espaço */
+    list-style-position: inside;
+    /* pra bolinha ficar dentro da lista. */
+    columns: 2;
+    /* colunas da lista */
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+}
+
+/* > (qualquer que estiver dentro de: *item  atrás. */
+/* EX: qualquer ul que estiver dentro de aside. */
+
+div.video {
+    background-color: red;
+    position: relative;
+    padding-bottom: 50%;
+    
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* macete */
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+}

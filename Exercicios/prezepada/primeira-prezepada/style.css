@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+    height: 100%;
+    background-image: linear-gradient(90deg, black, white);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+}
+.container {
+    position: relative;
+}
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1px;
+    text-align: center;
+}
+main {
+   background-color:white; 
+}
+
+.transparent-button {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Adicionado 'transform' à transição */
+}
+
+.transparent-button:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #000; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}

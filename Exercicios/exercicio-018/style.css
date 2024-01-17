@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'japa';
+    src: url('tokyo_taiyaki/TokyoTaiyakiDEMO-Regular.otf') format('opentype');
+}
+
+body{
+font: bold 20px arial helvetica sans-serif;
+}
+
+h1 {
+    font-family: 'japa', cursive;
+}

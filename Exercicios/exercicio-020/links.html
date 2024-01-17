@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::after {
+            text-decoration: none;
+            text-align: center;
+            content: '[link]';
+        }
+        .especial {
+            background-color: blue
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <a href="links.html" target="_blank" rel="external"><li>Nome</li></a>
+        <li>Menu</li>
+        <a href="https://www.youtube.com" class="especial"target="_blank" rel="external"><li>Youtube</li>
+        </a>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/M.PNG" type="image/png">
+        <img src="imagens/G.png" alt="Imagem flexivel">
+    </picture>
+
+    <h2>sobre a experiência do usuario</h2>
+    <p>se o seu usuario sai do site, isso gera um bounce rate, uma medida de pessoas que saem do seu site, por qualquer motivo. <br> Isso é uma medida do google pro seu site, tipo um recomendado do youtube... <br> por isso é importante se preocupar com a experiencia do usuario.</p>
+    <p>redimensionar a imagens em CSS não vai deixa-la mais leve.</p>
+<h3>SEO</h3>
+<p>se um visitante entra num site e sai dele sem interagir, o google leva como insatisfação e faz uma taxa de rejeição.</p>
+<p>o google verifica primeiro para celular.</p>
+<p>foque na otimização do celular. Porque há clientes com 4G e 3G, e que devemos deixar o mais leve possivel para celular.</p>
+    <hr>
+    <h1>botando audio</h1>
+    <p>direitos autorais <br>
+    peso do arquivo... <br>
+    todos os temas debatidos anteriormente sobre direitos autorais, servem tambem para imagens.
+</p>
+<p>vamos aprender a reproduzir audios em HTML5</p>
+<audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+<!--HP3 WAV OGG--> <!--forma mais simples de adicionar audio (acima)-->
+<audio preload="metadata" autoplay controls loop>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.mp3" type="audio/ogg">
+    <source src="midia/guanacast-33.mp3" type="audio/vaw">
+<p>infelizmente seu navegador não é compativel com o áudio. <a href="midia/guanacast-33.mp3">clique aqui para baixar seu mp3</a></p>
+</audio>
+<!--ordem é importante-->
+<!--wav não é recomendado, por ser pesado demais-->
+<!--loop não é recomendado (por algum motivo misterioso)-->
+
+
+</body>
+</html>
