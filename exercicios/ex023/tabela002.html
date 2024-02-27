@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        -->
+
+        <table>
+            <caption>População das unidades federativas</caption>
+            <thead>
+                <th scope="col">Estado</th>
+                <th scope="col">população</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>21 169 791</td>
+                </tr>
+                <tr>
+                    <td>Rio De janeiro</td>
+                    <td>17 264 943</td>
+                </tr>
+                <tr>
+                    <td>canavieira</td>
+                    <td>5 habitantes</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">total de habitantes</th>
+                    <td>15 pessoas</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Minha tabela</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Minha tentativa</th>
+                    <th>descobri que tem que ter 2</th>
+                    <th>na verdade, a quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sla</td>
+                    <td>não sei</td>
+                    <td>sei</td>
+                </tr>
+                <tr>
+                    <td>achei facil</td>
+                    <td>na vdd to com medo</td>
+                    <td>vai que eu esqueço</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>to lenhado</th>
+                    <td>se eu esqueçer não lembro mais</td>
+                    <td>o certo é anotar</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>lorem</p>
+</body>
+</html>
