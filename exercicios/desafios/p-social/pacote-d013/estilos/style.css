@@ -40,8 +40,6 @@ iframe#tela {
     height: 471px;
 }
 
-/*  */
-
 section#redes-sociais {
     text-align: right;
 }
@@ -52,15 +50,13 @@ section#redes-sociais a img {
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     box-sizing: border-box;
-    /* Faz com que a borda faça parte da caixa */
 }
 
 section#redes-sociais img:hover {
     border: 2px solid rgba(255, 255, 255, 0.600);
     transform: translate(-3px, -3px);
-    /* transform movendo coisas */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
-    transition: transform 0.4s, border .4s;
-    /* transition seleções */
-    /* Nunca se esqueça da suavização */
+    transition: transform .4s, border .4s, box-shadow .4s;
 }
+
+
