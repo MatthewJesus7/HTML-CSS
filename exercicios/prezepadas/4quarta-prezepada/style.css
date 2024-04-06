@@ -1,2 +1,13 @@
 @charset "utf-8";
 
+:root {
+    --cor1: red;
+    --cor2: blue;
+    --fonte1: arial;
+}
+
+body { 
+    background-color: var(--cor1);
+    color: var(--cor2);
+    font-family: var(--fonte1);
+}
