@@ -12,12 +12,18 @@
         <div>
             <label for="inum">Número: </label>
             <input type="range" name="num" id="inum" min="0" max="10" value="5" 
-            oninput="ival.innerHTML = Number(inum.value)">
 
+            oninput="ival.innerHTML = Number(inum.value)">
             <output id="ival">5</output>
 
             <!-- 
-                Aqui definimos o ival colocado na id do output como uma utilidade de definir o valor dos números, e estando dentro do input com um value, os dois se juntam e funcionam como um só.
+                Colocamos o id no output (que vai mudar com o código)
+
+                Colocamos um oninput, que, dentro de um imput, vai ativa-lo, de acordo.
+
+                colocamos a id do output que queremos ligar.
+
+                definimos o código por nomeação. (que nesse caso é Number(inum.value))
              -->
         </div>
 
