@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php">
+
+        <div>
+            <label for="iano">Em que ano você nasceu?
+                <input type="number" name="ano" id="iano" min="1906" max="2024" value="2000" required oninput="calidade()">
+
+                <!-- Estamos aplicando a função (criada) de calculo de idade -->
+            </label>
+        </div>
+
+        <div>
+            <label for="iidade">Sua idade é</label>
+            <output id="iidade"></output>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <script>
+        function calidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+
+        // Aqui estamos criando uma nova função em JavaScript
+    </script>
+
+    <!-- Idade que você faz no ano colocado (2024) -->
+
+    
+</body>
+</html>
