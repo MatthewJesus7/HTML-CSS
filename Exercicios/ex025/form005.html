@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <h1> Exmplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sx" id="isxhom" value="H">
+            <label for="ihom">Homem</label>
+            <br>
+
+            <input type="radio" name="sx" id="isxlmul" value="M">
+            <label for="imul">Mulher</label>
+            <br>
+
+            <input type="radio" name="sx" id="isxnin" checked value="N-I">
+            <label for="isxnin">Não informar</label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>tópicos favoritos</legend>
+            <input type="checkbox" name="com" id="icom"> <label for="icom">Comédia</label>
+            <br>
+
+            <input type="checkbox" name="act" id="iact"> <label for="iact">Ação</label>
+            <br>
+
+            <input type="checkbox" name="rom" id="irom"> <label for="irom">Romance</label>
+            <br>
+
+            <input type="checkbox" name="ter" id="iter"> <label for="iter">Terror</label>
+            <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
