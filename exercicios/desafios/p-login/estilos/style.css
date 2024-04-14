@@ -36,8 +36,8 @@ fieldset {
     border-radius: 10px;
     margin: auto;
     margin-top: 50px;
-    height: 90%;
-    width: 80%;
+    height: 80%;
+    width: 75%;
 }
 
 h1 {
@@ -118,5 +118,6 @@ input, #login, #senha {
 a {
     color: var(--cor2-1);
 }
+
 
 

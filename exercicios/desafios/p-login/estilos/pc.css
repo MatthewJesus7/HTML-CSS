@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* html, body {
+    box-shadow: inset 3px 3px 100px black;
+} */
+
+
+fieldset {
+    width: 40%;
+    margin-right: 5%;
+}
